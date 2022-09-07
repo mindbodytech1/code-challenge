@@ -40,11 +40,6 @@ const isPalindrome = function(str) {
     }  
     alert( 'True');
 };
-const string = prompt('Enter a string ');  
-  
-const value = isPalindrome(string);  
-  
-console.log(value);
 
 const largestPair = function(array) {
     var max=-Infinity;
