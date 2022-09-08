@@ -31,14 +31,14 @@ const findFrequency = function(array) {
 };
 
 const isPalindrome = function(str) {
-    const length = string.length; 
-    
-    for (let i = 0; i < length / 2; i++) {  
-        if (string[i] !== string[length - 1 - i]) {  
-            alert( 'False');  
-        }  
-    }  
-    alert( 'True');
+    var reg = /[\W_]/g;
+
+    varsmallStr = str.toLowerCase().replace(reg, '');
+
+    var reversed = str.split('').reverse().join('');
+    if (reversed === str) return true;
+
+    return false;
 };
 
 const largestPair = function(array) {
